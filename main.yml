@@ -9,6 +9,8 @@
           - git
           - ansible
           - vim
+          - audacious
+          - terminator
       become: yes
 
     - name: Create required user folders
@@ -37,10 +39,13 @@
         path: "{{ ansible_env.HOME }}/{{ item.link_dst }}"
         src: "{{ ansible_env.HOME }}/{{ item.link_src }}"
         state: link
+        force: yes
       with_items:
         - link_src: "src/laptop-config/xfce4"
           link_dst: ".config/xfce4"
         - link_src: "src/laptop-config/themes"
           link_dst: ".config/themes"
+        - link_src: "src/laptop-config/.bashrc"
+          link_dst: ".bashrc"
 
         

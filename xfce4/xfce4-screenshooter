@@ -1,7 +1,7 @@
 delay=0
 region=1
 show_mouse=0
-screenshot_dir=file:///~/Pictures
+screenshot_dir=file:///home/rdiscala/Pictures
 app=ristretto
 last_user=
 action=1

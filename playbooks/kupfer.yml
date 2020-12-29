@@ -1,0 +1,27 @@
+---
+- hosts: localhost
+  tasks:
+    - yum:
+        state: present
+        name:
+          - intltool
+      become: yes
+
+    - name: Checkout Kupfer repo
+      git:
+        repo: "https://github.com/kupferlauncher/kupfer.git"
+        dest: "{{ ansible_env.HOME }}/src/kupfer"
+        version: "v320"
+
+    - name: Run build scripts
+      command:
+        chdir: "{{ ansible_env.HOME }}/src/kupfer"
+        cmd: "{{ item }}"
+      with_items:
+        - "./waf configure"
+        - "./waf"
+    - name: Run installation scripts
+      command:
+        chdir: "{{ ansible_env.HOME }}/src/kupfer"
+        cmd: "./waf install"
+      become: yes
