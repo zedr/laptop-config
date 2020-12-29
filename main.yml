@@ -50,5 +50,7 @@
           link_dst: ".bashrc"
         - link_src: "src/laptop-config/nvim"
           link_dst: ".config/nvim"
+        - link_src: "src/laptop-config/terminator"
+          link_dst: ".config/terminator"
 
         
