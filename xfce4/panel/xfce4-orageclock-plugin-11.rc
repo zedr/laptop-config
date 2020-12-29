@@ -1,0 +1,15 @@
+show_frame=false
+fg_set=true
+fg=54965R 54965G 54965B
+bg_set=true
+bg=5285R 5285G 5285B
+timezone=
+width_set=false
+height_set=false
+lines_vertically=true
+rotation=0
+data0=%X %Z - %A %d %B %Y
+font0=
+tooltip=%A %d %B %Y/%V
+hib_timing=false
+
