@@ -2,6 +2,6 @@
 	path = themes/HyperMinimalist
 	url = git@github.com:zedr/HyperMinimalist.git
     ignore = untracked
-[submodule "neovim_rc"]
-	path = neovim_rc
+[submodule "nvim"]
+	path = nvim
 	url = git@github.com:zedr/neovim_rc.git
