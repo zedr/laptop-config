@@ -19,6 +19,7 @@
         state: directory
       with_items:
         - "src"
+        - ".local/share/themes"
 
     #- name: Checkout config repo
     #  git:
@@ -44,7 +45,7 @@
         - link_src: "src/laptop-config/xfce4"
           link_dst: ".config/xfce4"
         - link_src: "src/laptop-config/themes"
-          link_dst: ".config/themes"
+          link_dst: ".local/share/themes"
         - link_src: "src/laptop-config/.bashrc"
           link_dst: ".bashrc"
         - link_src: "src/laptop-config/nvim"
