@@ -1,0 +1,3 @@
+[submodule "themes/HyperMinimalist"]
+	path = themes/HyperMinimalist
+	url = git@github.com:zedr/HyperMinimalist.git
