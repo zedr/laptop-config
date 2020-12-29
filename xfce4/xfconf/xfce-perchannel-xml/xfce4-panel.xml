@@ -5,103 +5,68 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=97;y=18"/>
-      <property name="mode" type="uint" value="0"/>
-      <property name="background-style" type="uint" value="1"/>
-      <property name="background-rgba" type="array">
-        <value type="double" value="0.100000"/>
-        <value type="double" value="0.100000"/>
-        <value type="double" value="0.100000"/>
-        <value type="double" value="1.000000"/>
-      </property>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="disable-struts" type="bool" value="false"/>
-      <property name="size" type="uint" value="32"/>
-      <property name="length-adjust" type="bool" value="false"/>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="26"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
+        <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="8"/>
-        <value type="int" value="12"/>
-        <value type="int" value="2"/>
         <value type="int" value="9"/>
-        <value type="int" value="5"/>
-        <value type="int" value="13"/>
-        <value type="int" value="4"/>
-        <value type="int" value="11"/>
-        <value type="int" value="15"/>
-        <value type="int" value="7"/>
-        <value type="int" value="3"/>
         <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="14"/>
       </property>
-      <property name="leave-opacity" type="uint" value="100"/>
-      <property name="span-monitors" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="show-button-title" type="bool" value="false"/>
-      <property name="button-icon" type="string" value="xfce4_xicon1"/>
+    <property name="plugin-1" type="string" value="applicationsmenu"/>
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="1"/>
     </property>
-    <property name="plugin-2" type="string" value="xfce4-clipman-plugin"/>
-    <property name="plugin-4" type="string" value="mailwatch"/>
-    <property name="plugin-5" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="audacious;chrome.instance10028;chrome.instance10096;chrome.instance10117;chrome.instance10249;chrome.instance10307;chrome.instance10392;chrome.instance10676;chrome.instance11268;chrome.instance11737;chrome.instance11761;chrome.instance11785;chrome.instance11828;chrome.instance11979;chrome.instance12026;chrome.instance12166;chrome.instance12297;chrome.instance12298;chrome.instance12559;chrome.instance12904;chrome.instance12946;chrome.instance12957;chrome.instance13032;chrome.instance13291;chrome.instance13453;chrome.instance13459;chrome.instance13628;chrome.instance13902;chrome.instance13931;chrome.instance14085;chrome.instance14586;chrome.instance14833;chrome.instance15502;chrome.instance16005;chrome.instance16630;chrome.instance16730;chrome.instance17043;chrome.instance17321;chrome.instance17880;chrome.instance21104;chrome.instance21143;chrome.instance21450;chrome.instance2153;chrome.instance21707;chrome.instance21771;chrome.instance24965;chrome.instance2739;chrome.instance28979;chrome.instance2943;chrome.instance2953;chrome.instance2965;chrome.instance2967;chrome.instance2970;chrome.instance2971;chrome.instance2975;chrome.instance2976;chrome.instance2977;chrome.instance2982;chrome.instance2983;chrome.instance2984;chrome.instance2985;chrome.instance2986;chrome.instance2988;chrome.instance2989;chrome.instance2990;chrome.instance2991;chrome.instance2992;chrome.instance2993;chrome.instance2994;chrome.instance2996;chrome.instance2997;chrome.instance2998;chrome.instance3000;chrome.instance3001;chrome.instance3002;chrome.instance3003;chrome.instance3004;chrome.instance3005;chrome.instance3006;chrome.instance3007;chrome.instance3008;chrome.instance3009;chrome.instance3010;chrome.instance3011;chrome.instance3012;chrome.instance3013;chrome.instance3014;chrome.instance3015;chrome.instance3016;chrome.instance30169;chrome.instance3017;chrome.instance3018;chrome.instance3019;chrome.instance3020;chrome.instance3021;chrome.instance3022;chrome.instance3023;chrome.instance3025;chrome.instance3026;chrome.instance3027;chrome.instance3028;chrome.instance3029;chrome.instance3030;chrome.instance3031;chrome.instance3032;chrome.instance3034;chrome.instance3036;chrome.instance3037;chrome.instance3038;chrome.instance3039;chrome.instance3040;chrome.instance3041;chrome.instance3044;chrome.instance3045;chrome.instance3046;chrome.instance3047;chrome.instance3048;chrome.instance3050;chrome.instance3053;chrome.instance3055;chrome.instance3056;chrome.instance3057;chrome.instance3058;chrome.instance3059;chrome.instance3061;chrome.instance3062;chrome.instance3064;chrome.instance3066;chrome.instance3067;chrome.instance3068;chrome.instance3069;chrome.instance3071;chrome.instance3073;chrome.instance3076;chrome.instance3077;chrome.instance3079;chrome.instance3081;chrome.instance3082;chrome.instance3084;chrome.instance3087;chrome.instance3088;chrome.instance3089;chrome.instance3090;chrome.instance3093;chrome.instance3095;chrome.instance3096;chrome.instance3097;chrome.instance3098;chrome.instance3099;chrome.instance3100;chrome.instance3101;chrome.instance3102;chrome.instance3103;chrome.instance3104;chrome.instance3105;chrome.instance3107;chrome.instance3108;chrome.instance3111;chrome.instance3112;chrome.instance3113;chrome.instance3115;chrome.instance3116;chrome.instance3117;chrome.instance3122;chrome.instance3124;chrome.instance3125;chrome.instance3126;chrome.instance3129;chrome.instance3132;chrome.instance3135;chrome.instance3136;chrome.instance3141;chrome.instance3142;chrome.instance31437;chrome.instance3146;chrome.instance3149;chrome.instance3151;chrome.instance3152;chrome.instance3154;chrome.instance3155;chrome.instance3161;chrome.instance3164;chrome.instance3167;chrome.instance3171;chrome.instance3172;chrome.instance3173;chrome.instance3174;chrome.instance3175;chrome.instance3177;chrome.instance3179;chrome.instance3180;chrome.instance3181;chrome.instance3182;chrome.instance3183;chrome.instance3187;chrome.instance3188;chrome.instance3189;chrome.instance3195;chrome.instance3197;chrome.instance3198;chrome.instance3199;chrome.instance3201;chrome.instance3202;chrome.instance3203;chrome.instance3208;chrome.instance3217;chrome.instance3230;chrome.instance3233;chrome.instance3238;chrome.instance3245;chrome.instance3246;chrome.instance3249;chrome.instance3254;chrome.instance3256;chrome.instance3260;chrome.instance3267;chrome.instance3268;chrome.instance3271;chrome.instance3272;chrome.instance3273;chrome.instance3277;chrome.instance3278;chrome.instance3279;chrome.instance3281;chrome.instance3285;chrome.instance3287;chrome.instance3288;chrome.instance3292;chrome.instance3293;chrome.instance3298;chrome.instance3299;chrome.instance3300;chrome.instance3309;chrome.instance3310;chrome.instance3314;chrome.instance3318;chrome.instance3319;chrome.instance3321;chrome.instance3326;chrome.instance3327;chrome.instance3335;chrome.instance3336;chrome.instance3345;chrome.instance3346;chrome.instance3353;chrome.instance3358;chrome.instance3359;chrome.instance3364;chrome.instance3370;chrome.instance3374;chrome.instance3379;chrome.instance3387;chrome.instance3392;chrome.instance3394;chrome.instance3397;chrome.instance3403;chrome.instance3408;chrome.instance3411;chrome.instance3413;chrome.instance3420;chrome.instance3424;chrome.instance3431;chrome.instance3432;chrome.instance3439;chrome.instance3445;chrome.instance3448;chrome.instance3463;chrome.instance3464;chrome.instance3475;chrome.instance3487;chrome.instance3491;chrome.instance3496;chrome.instance3497;chrome.instance3502;chrome.instance3506;chrome.instance3510;chrome.instance3521;chrome.instance3528;chrome.instance3530;chrome.instance3533;chrome.instance3543;chrome.instance3563;chrome.instance3564;chrome.instance3576;chrome.instance3586;chrome.instance3592;chrome.instance3594;chrome.instance3599;chrome.instance3603;chrome.instance3604;chrome.instance3606;chrome.instance3610;chrome.instance3612;chrome.instance3626;chrome.instance3642;chrome.instance3646;chrome.instance3647;chrome.instance3649;chrome.instance3652;chrome.instance3666;chrome.instance3667;chrome.instance3670;chrome.instance3683;chrome.instance3686;chrome.instance3691;chrome.instance3692;chrome.instance3693;chrome.instance3694;chrome.instance3696;chrome.instance3699;chrome.instance3709;chrome.instance3710;chrome.instance3732;chrome.instance3742;chrome.instance3744;chrome.instance3749;chrome.instance3753;chrome.instance3755;chrome.instance3756;chrome.instance3764;chrome.instance3766;chrome.instance3773;chrome.instance3775;chrome.instance3778;chrome.instance3780;chrome.instance3784;chrome.instance3791;chrome.instance3793;chrome.instance3798;chrome.instance3801;chrome.instance3805;chrome.instance3807;chrome.instance3819;chrome.instance3823;chrome.instance3827;chrome.instance3831;chrome.instance3835;chrome.instance3836;chrome.instance3854;chrome.instance3857;chrome.instance3860;chrome.instance3871;chrome.instance3873;chrome.instance3877;chrome.instance3883;chrome.instance3888;chrome.instance3890;chrome.instance3893;chrome.instance3899;chrome.instance3914;chrome.instance3926;chrome.instance3941;chrome.instance3943;chrome.instance3944;chrome.instance3965;chrome.instance3966;chrome.instance3987;chrome.instance3989;chrome.instance3996;chrome.instance4020;chrome.instance4034;chrome.instance4057;chrome.instance4062;chrome.instance4084;chrome.instance4091;chrome.instance4093;chrome.instance4114;chrome.instance4117;chrome.instance4119;chrome.instance4122;chrome.instance4126;chrome.instance4137;chrome.instance4138;chrome.instance4148;chrome.instance4160;chrome.instance4165;chrome.instance4167;chrome.instance4179;chrome.instance4180;chrome.instance4182;chrome.instance4211;chrome.instance4213;chrome.instance4227;chrome.instance4250;chrome.instance4252;chrome.instance4254;chrome.instance4260;chrome.instance4262;chrome.instance4263;chrome.instance4282;chrome.instance4289;chrome.instance4291;chrome.instance4295;chrome.instance4302;chrome.instance4303;chrome.instance4308;chrome.instance4314;chrome.instance4325;chrome.instance4362;chrome.instance4365;chrome.instance4395;chrome.instance4402;chrome.instance4427;chrome.instance4431;chrome.instance4439;chrome.instance4443;chrome.instance4452;chrome.instance4460;chrome.instance4468;chrome.instance4472;chrome.instance4482;chrome.instance4494;chrome.instance4505;chrome.instance4512;chrome.instance4525;chrome.instance4526;chrome.instance4529;chrome.instance4558;chrome.instance4562;chrome.instance4567;chrome.instance4572;chrome.instance4596;chrome.instance4614;chrome.instance4617;chrome.instance4623;chrome.instance4624;chrome.instance4635;chrome.instance4652;chrome.instance4657;chrome.instance4682;chrome.instance4709;chrome.instance4712;chrome.instance4731;chrome.instance4742;chrome.instance4756;chrome.instance4761;chrome.instance4765;chrome.instance4776;chrome.instance4786;chrome.instance4797;chrome.instance4803;chrome.instance4822;chrome.instance4826;chrome.instance4845;chrome.instance4850;chrome.instance4869;chrome.instance4871;chrome.instance4895;chrome.instance4908;chrome.instance4917;chrome.instance4924;chrome.instance4926;chrome.instance4945;chrome.instance4966;chrome.instance4979;chrome.instance5008;chrome.instance5009;chrome.instance5011;chrome.instance5032;chrome.instance5043;chrome.instance5053;chrome.instance5058;chrome.instance5066;chrome.instance5069;chrome.instance5081;chrome.instance5097;chrome.instance5116;chrome.instance5152;chrome.instance5159;chrome.instance5167;chrome.instance5170;chrome.instance5171;chrome.instance5185;chrome.instance5191;chrome.instance5201;chrome.instance5207;chrome.instance5257;chrome.instance5264;chrome.instance5284;chrome.instance5295;chrome.instance5309;chrome.instance5325;chrome.instance5329;chrome.instance5331;chrome.instance5337;chrome.instance5342;chrome.instance5346;chrome.instance5411;chrome.instance5416;chrome.instance5439;chrome.instance5477;chrome.instance5482;chrome.instance5495;chrome.instance5517;chrome.instance5527;chrome.instance5535;chrome.instance5546;chrome.instance5593;chrome.instance5609;chrome.instance5628;chrome.instance5675;chrome.instance5721;chrome.instance5732;chrome.instance5751;chrome.instance5801;chrome.instance5813;chrome.instance5814;chrome.instance5820;chrome.instance5839;chrome.instance5841;chrome.instance5893;chrome.instance5894;chrome.instance5899;chrome.instance5907;chrome.instance5947;chrome.instance5962;chrome.instance5979;chrome.instance5980;chrome.instance6013;chrome.instance6040;chrome.instance6084;chrome.instance6090;chrome.instance6109;chrome.instance6140;chrome.instance6167;chrome.instance6228;chrome.instance6282;chrome.instance6304;chrome.instance6331;chrome.instance6351;chrome.instance6359;chrome.instance6364;chrome.instance6433;chrome.instance6449;chrome.instance6509;chrome.instance6543;chrome.instance6603;chrome.instance6628;chrome.instance6630;chrome.instance6639;chrome.instance6642;chrome.instance6668;chrome.instance6683;chrome.instance6708;chrome.instance6715;chrome.instance6761;chrome.instance6831;chrome.instance6847;chrome.instance6868;chrome.instance6871;chrome.instance6904;chrome.instance6940;chrome.instance6990;chrome.instance7014;chrome.instance7090;chrome.instance7121;chrome.instance7172;chrome.instance7297;chrome.instance7299;chrome.instance7347;chrome.instance7356;chrome.instance7497;chrome.instance7712;chrome.instance7738;chrome.instance7746;chrome.instance7757;chrome.instance7822;chrome.instance7825;chrome.instance7866;chrome.instance7969;chrome.instance7993;chrome.instance8006;chrome.instance8077;chrome.instance8293;chrome.instance8381;chrome.instance8452;chrome.instance8493;chrome.instance8626;chrome.instance8719;chrome.instance8768;chrome.instance8791;chrome.instance8902;chrome.instance8967;chrome.instance8991;chrome.instance8999;chrome.instance9192;chrome.instance9207;chrome.instance9233;chrome.instance9244;chrome.instance9352;chrome.instance9389;chrome.instance9410;chrome.instance9440;chrome.instance9564;chrome.instance9761;chrome.instance9779;chrome.instance9781;pragha;rhythmbox;spotify;vlc"/>
-    </property>
-    <property name="plugin-6" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-      <property name="miniature-view" type="bool" value="true"/>
-      <property name="workspace-scrolling" type="bool" value="false"/>
-    </property>
-    <property name="plugin-7" type="string" value="actions"/>
-    <property name="plugin-8" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-9" type="string" value="systray">
-      <property name="names-ordered" type="array">
-        <value type="string" value="synergy"/>
-        <value type="string" value="zoom"/>
-        <value type="string" value="steam"/>
-        <value type="string" value="discord"/>
-        <value type="string" value="kde connect indicator"/>
-        <value type="string" value="dropbox"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="skypeforlinux"/>
-        <value type="string" value="blueberry-tray.py"/>
-        <value type="string" value="redshift-gtk"/>
-        <value type="string" value="pragha music player"/>
-        <value type="string" value="seapplet"/>
-        <value type="string" value="audacious"/>
-        <value type="string" value="task manager"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="kupfer.py"/>
-        <value type="string" value="orage"/>
-        <value type="string" value="dnfdragora-updater"/>
-        <value type="string" value="bluetooth"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="xfce4-power-manager"/>
-      </property>
+    <property name="plugin-4" type="string" value="pager"/>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="true"/>
-    </property>
-    <property name="clipman" type="empty">
-      <property name="settings" type="empty">
-        <property name="add-primary-clipboard" type="bool" value="true"/>
-        <property name="max-texts-in-history" type="uint" value="25"/>
-      </property>
-      <property name="tweaks" type="empty">
-        <property name="paste-on-activate" type="uint" value="2"/>
-        <property name="never-confirm-history-clear" type="bool" value="true"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="seapplet"/>
+        <value type="string" value="dnfdragora-updater"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="networkmanager applet"/>
       </property>
     </property>
-    <property name="plugin-11" type="string" value="xfce4-orageclock-plugin"/>
-    <property name="plugin-12" type="string" value="cpugraph"/>
-    <property name="plugin-13" type="string" value="screenshooter"/>
-    <property name="plugin-3" type="string" value="battery"/>
-    <property name="plugin-10" type="string" value="xkb"/>
-    <property name="plugin-15" type="string" value="weather"/>
+    <property name="plugin-7" type="string" value="statusnotifier">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="symbolic-icons" type="bool" value="true"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock"/>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-14" type="string" value="actions"/>
   </property>
 </channel>

@@ -1,0 +1,46 @@
+---
+- hosts: localhost
+  vars:
+    git_key_file: "{{ ansible_env.HOME }}/.ssh/id_rsa"
+  tasks:
+    - name: Install dependencies
+      yum:
+        name:
+          - git
+          - ansible
+          - vim
+      become: yes
+
+    - name: Create required user folders
+      file:
+        path: "{{ ansible_env.HOME }}/{{ item }}"
+        state: directory
+      with_items:
+        - "src"
+
+    #- name: Checkout config repo
+    #  git:
+    #    repo: "git@github.com:zedr/laptop-config.git"
+    #    dest: "{{ ansible_env.HOME }}/src/laptop-config"
+    #    track_submodules: yes
+    #    key_file: "{{ git_key_file }}"
+
+    - name: Install user fonts
+      copy:
+        src: "{{ ansible_env.HOME }}/src/laptop-config/fonts/"
+        dest: "/usr/share/fonts/"
+        remote_src: yes
+      become: yes
+    
+    - name: Create symlinks
+      file:
+        path: "{{ ansible_env.HOME }}/{{ item.link_dst }}"
+        src: "{{ ansible_env.HOME }}/{{ item.link_src }}"
+        state: link
+      with_items:
+        - link_src: "src/laptop-config/xfce4"
+          link_dst: ".config/xfce4"
+        - link_src: "src/laptop-config/themes"
+          link_dst: ".config/themes"
+
+        
