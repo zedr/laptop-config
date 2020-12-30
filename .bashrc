@@ -85,3 +85,6 @@ function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
 
 alias fastscan="nmap -sP -T5" $1
 export GOPATH=~/dist/golang
+
+# use ssh-agent
+eval $(ssh-agent) &>/dev/null
