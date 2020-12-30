@@ -56,5 +56,5 @@
           link_dst: ".config/nvim"
         - link_src: "src/laptop-config/terminator"
           link_dst: ".config/terminator"
-
-        
+        - link_src: "src/laptop-config/audacious"
+          link_dst: ".config/audacious"
