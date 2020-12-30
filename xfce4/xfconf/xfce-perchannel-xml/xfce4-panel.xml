@@ -59,6 +59,7 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="true"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="redshift-gtk"/>
         <value type="string" value="kupfer.py"/>
         <value type="string" value="seapplet"/>
         <value type="string" value="dnfdragora-updater"/>
