@@ -11,6 +11,10 @@
           - neovim
           - audacious
           - terminator
+          - xfce4-sensors-plugin
+          - xfce4-cpugraph-plugin
+          - xfce4-screenshooter
+          - xfce4-screenshooter-plugin
       become: yes
 
     - name: Create required user folders

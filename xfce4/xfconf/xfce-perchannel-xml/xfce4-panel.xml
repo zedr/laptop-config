@@ -8,7 +8,7 @@
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="icon-size" type="uint" value="16"/>
+      <property name="icon-size" type="uint" value="0"/>
       <property name="size" type="uint" value="26"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
@@ -16,6 +16,10 @@
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
+        <value type="int" value="21"/>
+        <value type="int" value="16"/>
+        <value type="int" value="15"/>
+        <value type="int" value="19"/>
         <value type="int" value="6"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
@@ -25,10 +29,21 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
       </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="1.000000"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu"/>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-title" type="string" value=""/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="button-icon" type="string" value="/home/rdiscala/src/laptop-config/assets/images/redhat-logo.png"/>
+    </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
     </property>
@@ -51,10 +66,6 @@
         <value type="string" value="networkmanager applet"/>
       </property>
     </property>
-    <property name="plugin-7" type="string" value="statusnotifier">
-      <property name="square-icons" type="bool" value="true"/>
-      <property name="symbolic-icons" type="bool" value="true"/>
-    </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
@@ -70,5 +81,19 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-14" type="string" value="actions"/>
+    <property name="plugin-15" type="string" value="xfce4-clipman-plugin"/>
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="add-primary-clipboard" type="bool" value="true"/>
+        <property name="show-qr-code" type="bool" value="true"/>
+      </property>
+      <property name="tweaks" type="empty">
+        <property name="paste-on-activate" type="uint" value="2"/>
+        <property name="max-menu-items" type="uint" value="24"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="netload"/>
+    <property name="plugin-19" type="string" value="screenshooter"/>
+    <property name="plugin-21" type="string" value="cpugraph"/>
   </property>
 </channel>
