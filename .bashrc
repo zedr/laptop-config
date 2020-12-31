@@ -88,3 +88,6 @@ export GOPATH=~/dist/golang
 
 # use ssh-agent
 eval $(ssh-agent) &>/dev/null
+
+# Use the main virtualenv
+source ~/Envs/main/bin/activate

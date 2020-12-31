@@ -11,10 +11,14 @@
           - neovim
           - audacious
           - terminator
+          - nautilus
+          - gnome-keyring
           - xfce4-sensors-plugin
           - xfce4-cpugraph-plugin
           - xfce4-screenshooter
           - xfce4-screenshooter-plugin
+          - sshfs
+          - gvfs-smb
       become: yes
 
     - name: Create required user folders

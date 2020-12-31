@@ -1,10 +1,7 @@
 
-[audacious]
-show_interface=FALSE
-
 [audgui]
 filebrowser_win=624,501,672,480
-filesel_path=/home/zedr/Music/Mods
+filesel_path=/home/zedr/Music
 playlist_export_win=570,247,780,585
 playlist_path=file:///home/zedr/tmp
 url_opener_win=768,453,384,174
