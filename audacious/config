@@ -1,4 +1,7 @@
 
+[audacious]
+show_interface=FALSE
+
 [audgui]
 filebrowser_win=624,501,672,480
 filesel_path=/home/zedr/Music
@@ -32,6 +35,7 @@ show_remaining_time=TRUE
 skin=/usr/share/audacious/Skins/Default
 
 [skins-layout]
+albumart-qt=816,444,288,192
 playlist-manager=1315,170,288,192
 
 [statusicon]

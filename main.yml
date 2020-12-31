@@ -19,6 +19,16 @@
           - xfce4-screenshooter-plugin
           - sshfs
           - gvfs-smb
+          - redshift
+          - redshift-gtk
+      become: yes
+
+    - name: Remove unwanted applications
+      yum:
+        name:
+          - nano
+          - geany
+        state: absent
       become: yes
 
     - name: Create required user folders
@@ -29,12 +39,17 @@
         - "src"
         - ".local/share/themes"
 
-    - name: Install user fonts
+    - name: Install user shared assets
       copy:
-        src: "{{ ansible_env.HOME }}/src/laptop-config/fonts/"
-        dest: "/usr/share/fonts/"
+        src: "{{ ansible_env.HOME }}/src/laptop-config/{{ item.src }}"
+        dest: "{{ item.dst }}"
         remote_src: yes
       become: yes
+      with_items:
+        - src: "fonts/"
+          dst: "/usr/share/fonts/"
+        - src: "backgrounds/"
+          dst: "/usr/share/backgrounds/"
     
     - name: Create symlinks
       file:
@@ -55,3 +70,10 @@
           link_dst: ".config/terminator"
         - link_src: "src/laptop-config/audacious"
           link_dst: ".config/audacious"
+
+    - name: Set LightDM background image
+      lineinfile:
+        path: "/etc/lightdm/lightdm-gtk-greeter.conf"
+        regexp: '^background ?='
+        line: "background=/usr/share/backgrounds/fedora1.jpg"
+      become: yes

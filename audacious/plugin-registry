@@ -790,7 +790,7 @@ domain audacious-plugins
 priority 0
 about 1
 config 1
-enabled 0
+enabled 1
 general /usr/lib64/audacious/General/statusicon.so
 stamp 1595854817
 version 48

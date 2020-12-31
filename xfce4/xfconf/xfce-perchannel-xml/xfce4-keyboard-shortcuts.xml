@@ -163,6 +163,7 @@
       <property name="&lt;Alt&gt;3" type="string" value="workspace_3_key"/>
       <property name="&lt;Alt&gt;4" type="string" value="workspace_4_key"/>
       <property name="&lt;Alt&gt;5" type="string" value="workspace_5_key"/>
+      <property name="&lt;Primary&gt;Tab" type="string" value="switch_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
