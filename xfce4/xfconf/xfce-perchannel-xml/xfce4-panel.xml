@@ -42,7 +42,7 @@
     <property name="plugin-1" type="string" value="applicationsmenu">
       <property name="button-title" type="string" value=""/>
       <property name="show-button-title" type="bool" value="false"/>
-      <property name="button-icon" type="string" value="/home/rdiscala/src/laptop-config/assets/images/redhat-logo.png"/>
+      <property name="button-icon" type="string" value="fedora-logo-icon"/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
