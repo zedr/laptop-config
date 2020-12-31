@@ -21,6 +21,7 @@
           - gvfs-smb
           - redshift
           - redshift-gtk
+          - kernel-tools
       become: yes
 
     - name: Remove unwanted applications
