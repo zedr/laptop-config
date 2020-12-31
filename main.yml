@@ -25,13 +25,6 @@
         - "src"
         - ".local/share/themes"
 
-    #- name: Checkout config repo
-    #  git:
-    #    repo: "git@github.com:zedr/laptop-config.git"
-    #    dest: "{{ ansible_env.HOME }}/src/laptop-config"
-    #    track_submodules: yes
-    #    key_file: "{{ git_key_file }}"
-
     - name: Install user fonts
       copy:
         src: "{{ ansible_env.HOME }}/src/laptop-config/fonts/"
