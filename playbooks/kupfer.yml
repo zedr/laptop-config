@@ -25,3 +25,18 @@
         chdir: "{{ ansible_env.HOME }}/src/kupfer"
         cmd: "./waf install"
       become: yes
+
+    - name: Create required user config folder
+      file:
+        path: "{{ ansible_env.HOME }}/.config/kupfer"
+        state: directory
+
+    - name: Create symlinks
+      file:
+        path: "{{ ansible_env.HOME }}/{{ item.link_dst }}"
+        src: "{{ ansible_env.HOME }}/{{ item.link_src }}"
+        state: link
+        force: yes
+      with_items:
+        - link_src: "src/laptop-config/kupfer/kupfer.cfg"
+          link_dst: ".config/kupfer/kupfer.cfg"
