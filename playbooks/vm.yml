@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install dependencies
+      yum:
+        name:
+          - libvirt
+          - virt-manager
+          - libvirt-daemon-kvm
+      become: yes
+
+    - name: Define running user id
+      set_fact:
+        user_name: "{{ lookup('env', 'USER') }}"
+
+    - name: Add privileges to current user
+      user:
+        name: "{{ user_name }}"
+        groups: libvirt,kvm
+        append: yes
+      become: yes
