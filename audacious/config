@@ -4,7 +4,7 @@ show_interface=FALSE
 
 [audgui]
 filebrowser_win=624,501,672,480
-filesel_path=/home/zedr/Music
+filesel_path=/home/rdiscala/Music/Mods
 playlist_export_win=570,247,780,585
 playlist_path=file:///home/zedr/tmp
 url_opener_win=768,453,384,174
@@ -25,8 +25,8 @@ entry2=http://www.darthradio.tk:8001/dstream
 [skins]
 equalizer_x=1030
 equalizer_y=281
-player_x=1455
-player_y=958
+player_x=742
+player_y=644
 playlist_shaded=TRUE
 playlist_width=425
 playlist_x=1305

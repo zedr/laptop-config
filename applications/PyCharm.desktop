@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PyCharm
+Comment=
+Icon=/home/rdiscala/Apps/pycharm/bin/pycharm.png
+Exec=/home/rdiscala/Apps/pycharm/bin/pycharm.sh
+Path=/home/rdiscala/Apps/pycharm
+Terminal=false
+StartupNotify=true
