@@ -89,5 +89,11 @@ export GOPATH=~/dist/golang
 # use ssh-agent
 eval $(ssh-agent) &>/dev/null
 
+# Vagrant
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+
+# User prompt
+export PS1="[\[\033[1;32m\]\u@\h\[\033[0;0m\] \[\033[1;33m\]${?}\[\033[0;0m\] \[\033[1;34m\]\w\[\033[0;0m\]]\n$ "
+
 # Use the main virtualenv
 source ~/Envs/main/bin/activate
