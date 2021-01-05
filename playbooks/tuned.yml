@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+
+    - name: Install Tuned
+      yum:
+        name: tuned
+        state: present
+
+    - name:
+      systemd:
+        name: tuned
+        state: started
