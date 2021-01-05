@@ -21,3 +21,8 @@
         groups: libvirt,kvm
         append: yes
       become: yes
+
+    - name: Start libvirtd daemon
+      systemd:
+        name: libvirtd
+        state: started
