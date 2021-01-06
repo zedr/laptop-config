@@ -4,31 +4,6 @@
     git_key_file: "{{ ansible_env.HOME }}/.ssh/id_rsa"
   tasks:
 
-    - name: Define Fedora major version number
-      set_fact:
-        fedora_version: "{{ hostvars['localhost'].ansible_distribution_major_version }}"
-      tags:
-        - packages
-
-    - name: Check for RPM Fusion repo
-      stat:
-        path: '/etc/yum.repos.d/rpmfusion-free.repo'
-      register: rpmfusion_repo
-      tags:
-        - packages
-
-    - name: Install dependencies
-      yum:
-        disable_gpg_check: yes
-        name:
-          - "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ fedora_version }}.noarch.rpm"
-          - "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ fedora_version }}.noarch.rpm"
-
-      become: yes
-      when: not rpmfusion_repo.stat.exists
-      tags:
-        - packages
-
     - name: Install packages
       yum:
         name:
@@ -48,9 +23,6 @@
           - redshift
           - redshift-gtk
           - kernel-tools
-          - vlc
-          - python-vlc
-          - ffmpeg
       become: yes
       tags:
         - packages
@@ -60,7 +32,6 @@
         name:
           - nano
           - geany
-          - parole
         state: absent
       become: yes
       tags:
