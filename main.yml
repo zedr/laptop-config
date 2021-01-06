@@ -23,6 +23,8 @@
           - redshift
           - redshift-gtk
           - kernel-tools
+          - tilda
+          - bpython
       become: yes
       tags:
         - packages
@@ -78,6 +80,8 @@
           link_dst: ".config/audacious"
         - link_src: "src/laptop-config/applications"
           link_dst: ".local/share/applications"
+        - link_src: "src/laptop-config/tilda"
+          link_dst: ".config/tilda"
 
     - name: Set LightDM background image
       lineinfile:
