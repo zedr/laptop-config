@@ -5,7 +5,10 @@
 
     - name: Install Tuned
       yum:
-        name: tuned
+        name:
+          - tuned
+          - tuned-utils
+          - powertop
         state: present
 
     - name:

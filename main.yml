@@ -10,6 +10,7 @@
           - ansible
           - neovim
           - audacious
+          - audacious-plugins-exotic
           - terminator
           - nautilus
           - gnome-keyring
@@ -22,6 +23,9 @@
           - redshift
           - redshift-gtk
           - kernel-tools
+          - htop
+          - gimp
+          - perl-JSON-PP
       become: yes
 
     - name: Remove unwanted applications
@@ -29,6 +33,7 @@
         name:
           - nano
           - geany
+          - pragha
         state: absent
       become: yes
 

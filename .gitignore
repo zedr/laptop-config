@@ -1,5 +1,7 @@
 *.tmp
+.ignored
 desktop
+extras
 
 # Ignore Thunar changes
 thunar.xml
