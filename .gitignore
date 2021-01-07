@@ -6,8 +6,9 @@ extras
 # Ignore Thunar changes
 thunar.xml
 
-# Ignore keyboard layouts
+# Ignore keyboard and display layouts
 xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml
+xfce4/xfconf/xfce-perchannel-xml/displays.xml
 
 # Audacious
 audacious/playlist*

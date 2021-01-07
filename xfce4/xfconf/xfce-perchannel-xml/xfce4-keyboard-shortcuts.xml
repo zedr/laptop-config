@@ -43,16 +43,12 @@
       </property>
       <property name="XF86LogOff" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
-      <property name="XF86AudioNext" type="string" value="pragha --next"/>
-      <property name="XF86AudioPlay" type="string" value="pragha --pause"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="XF86Calculator" type="string" value="galculator"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="XF86Calendar" type="string" value="orage"/>
-      <property name="XF86AudioPrev" type="string" value="pragha --prev"/>
       <property name="XF86Terminal" type="string" value="xfce4-terminal"/>
-      <property name="XF86AudioMedia" type="string" value="pragha"/>
       <property name="XF86Memo" type="string" value="xfce4-notes"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
@@ -67,6 +63,7 @@
       <property name="&lt;Super&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;w" type="string" value="xkill"/>
       <property name="&lt;Super&gt;BackSpace" type="string" value="nautilus --new-window"/>
+      <property name="AudioPlay" type="string" value="/usr/bin/audacious -t"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
