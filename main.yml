@@ -39,6 +39,8 @@
           - nano
           - geany
           - pragha
+          - dnfdragora
+          - gnumeric
         state: absent
       become: yes
       tags:
