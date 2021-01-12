@@ -53,6 +53,7 @@
       with_items:
         - "src"
         - ".local/share/themes"
+        - "Apps"
 
     - name: Install user shared assets
       copy:
