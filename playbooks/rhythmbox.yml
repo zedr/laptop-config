@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  tasks:
+
+    - name: Install Rhythmbox and plugin dependencies
+      dnf:
+        name:
+          - rhythmbox
+          - python3-gobject
+          - python3-cairo-devel
+          - gobject-introspection-devel
+          - cairo-gobject-devel
+
+    - name:
+      pip:
+        name:
+          - vext
+          - vext.gi
+          - PyGObject
+
