@@ -21,6 +21,7 @@
           - xfce4-screenshooter-plugin
           - sshfs
           - gvfs-smb
+          - gvfs-nfs
           - redshift
           - redshift-gtk
           - kernel-tools
@@ -60,6 +61,7 @@
       with_items:
         - "src"
         - ".local/share/themes"
+        - "Apps"
 
     - name: Install user shared assets
       copy:

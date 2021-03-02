@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - yum_repository:
+        name: scrcpy
+        description: Copr repo for scrcpy owned by zeno
+        baseurl: https://download.copr.fedorainfracloud.org/results/zeno/scrcpy/fedora-$releasever-$basearch/
+        #type: rpm-md
+        skip_if_unavailable: True
+        gpgcheck: yes
+        gpgkey: https://download.copr.fedorainfracloud.org/results/zeno/scrcpy/pubkey.gpg
+        repo_gpgcheck: no
+        enabled: yes
+
+    - yum:
+        name:
+          - scrcpy
+        state: present
+
