@@ -21,6 +21,7 @@
           - xfce4-screenshooter-plugin
           - sshfs
           - gvfs-smb
+          - gvfs-nfs
           - redshift
           - redshift-gtk
           - kernel-tools
@@ -41,6 +42,7 @@
           - pragha
           - dnfdragora
           - gnumeric
+          - claws-mail
         state: absent
       become: yes
       tags:
