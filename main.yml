@@ -29,6 +29,12 @@
           - perl-JSON-PP
           - tilda
           - bpython
+          - python3-neovim
+          - evince-thumbnailer
+          - nmap
+          - podman
+          - buildah
+          - gvfs-nfs
       become: yes
       tags:
         - packages
@@ -41,6 +47,7 @@
           - pragha
           - dnfdragora
           - gnumeric
+          - claws-mail
         state: absent
       become: yes
       tags:
