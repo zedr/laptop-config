@@ -3,6 +3,7 @@
   tasks:
 
     - name: Install Rhythmbox and plugin dependencies
+      become: yes
       dnf:
         name:
           - rhythmbox
@@ -18,3 +19,18 @@
           - vext.gi
           - PyGObject
 
+    - name: Define the Rhythmbox plugins directory path
+      set_fact:
+        rhythmbox_plugins_path: "{{ ansible_env.HOME}}/.local/share/rhythmbox/plugins"
+
+    - name: Ensure the Rhythmbox plugins directory exists
+      file:
+        state: directory
+        path: "{{ rhythmbox_plugins_path }}"
+        mode: 0755
+
+    - name: Install tray icon plugin
+      unarchive:
+        src: https://github.com/mendhak/rhythmbox-tray-icon/raw/master/rhythmbox-tray-icon.zip
+        remote_src: yes
+        dest: "{{ rhythmbox_plugins_path }}"
